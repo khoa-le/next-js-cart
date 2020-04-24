@@ -24,12 +24,5 @@ export const getServerSideProps = async context => {
   });
   return { props: { products: products, page: page } };
 };
-ProductListPage.getInitialProps = async ctx => {
-  // Check user's session
-  const token = auth(ctx);
-  console.log(ctx);
-
-  return { token };
-};
 
 export default ProductListPage;
