@@ -1,0 +1,19 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateField",
+      "model": "attribute_value",
+      "field": "products",
+      "type": "product",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "product",
+      "field": "attribute_values",
+      "type": "attribute_value",
+      "arity": "List"
+    }
+  ]
+}

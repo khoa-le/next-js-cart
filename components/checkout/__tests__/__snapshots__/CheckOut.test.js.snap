@@ -1,0 +1,479 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckOut Can render CheckOut Form 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="mb-9"
+  >
+    <h1
+      class="h2 font-weight-normal"
+    >
+      Thanh Toán
+    </h1>
+  </div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-lg-4 order-lg-2 mb-9 mb-lg-0"
+    >
+      <div
+        class="mb-4"
+      >
+        <h2
+          class="h5"
+        >
+          Thông tin đơn hàng
+        </h2>
+      </div>
+      <div
+        class="shadow-sm rounded p-5"
+      >
+        <hr
+          class="my-5"
+        />
+        <form
+          class="js-focus-state input-group u-form"
+        >
+          <input
+            aria-label="Discount"
+            class="form-control u-form__input"
+            placeholder="Discount"
+            type="search"
+          />
+          <div
+            class="input-group-append"
+          >
+            <button
+              class="btn btn-primary u-btn-primary"
+              type="button"
+            >
+              Apply
+            </button>
+          </div>
+        </form>
+        <hr
+          class="my-5"
+        />
+        <div
+          class="media align-items-center"
+        >
+          <div
+            class="d-flex mr-3"
+          >
+            <h3
+              class="h6 text-secondary"
+            >
+              Tạm Tính
+            </h3>
+          </div>
+          <div
+            class="media-body text-right"
+          >
+            <span />
+          </div>
+        </div>
+        <div
+          class="media align-items-center"
+        >
+          <div
+            class="d-flex mr-3"
+          >
+            <h3
+              class="h6 text-secondary"
+            >
+              Phí Vận Chuyển
+            </h3>
+          </div>
+          <div
+            class="media-body text-right"
+          >
+            <span>
+              miễn phí
+            </span>
+          </div>
+        </div>
+        <hr
+          class="my-5"
+        />
+        <div
+          class="media align-items-center"
+        >
+          <div
+            class="d-flex mr-3"
+          >
+            <h3
+              class="h6 text-secondary"
+            >
+              Tổng Cộng
+            </h3>
+          </div>
+          <div
+            class="media-body text-right"
+          >
+            <strong />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-lg-8 order-lg-1"
+    >
+      <form
+        class="js-validate"
+      >
+        <div
+          class="mb-4"
+        >
+          <h2
+            class="h5"
+          >
+            Địa chỉ nhận hàng
+          </h2>
+        </div>
+        <div
+          class="row mb-9"
+        >
+          <div
+            class="col-md-6"
+          >
+            <div
+              class="js-form-message mb-6"
+            >
+              <label
+                class="h6 small d-block text-uppercase"
+              >
+                Tên
+                <span
+                  class="text-danger"
+                >
+                  *
+                </span>
+              </label>
+              <div
+                class="js-focus-state input-group u-form"
+              >
+                <input
+                  aria-label="Jack"
+                  class="form-control u-form__input"
+                  data-error-class="u-has-error"
+                  data-msg="Please enter your frist name."
+                  data-success-class="u-has-success"
+                  placeholder="Jack"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6"
+          >
+            <div
+              class="js-form-message mb-6"
+            >
+              <label
+                class="h6 small d-block text-uppercase"
+              >
+                Họ
+                <span
+                  class="text-danger"
+                >
+                  *
+                </span>
+              </label>
+              <div
+                class="js-focus-state input-group u-form"
+              >
+                <input
+                  aria-label="Wayley"
+                  class="form-control u-form__input"
+                  data-error-class="u-has-error"
+                  data-msg="Please enter your last name."
+                  data-success-class="u-has-success"
+                  placeholder="Wayley"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-100"
+          />
+          <div
+            class="col-md-6"
+          >
+            <div
+              class="js-form-message mb-6"
+            >
+              <label
+                class="h6 small d-block text-uppercase"
+              >
+                Email address
+                <span
+                  class="text-danger"
+                >
+                  *
+                </span>
+              </label>
+              <div
+                class="js-focus-state input-group u-form"
+              >
+                <input
+                  aria-label="jackwayley@gmail.com"
+                  class="form-control u-form__input"
+                  data-error-class="u-has-error"
+                  data-msg="Please enter a valid email address."
+                  data-success-class="u-has-success"
+                  placeholder="jackwayley@gmail.com"
+                  type="email"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6"
+          >
+            <div
+              class="js-form-message mb-6"
+            >
+              <label
+                class="h6 small d-block text-uppercase"
+              >
+                Số điện thoại
+                <span
+                  class="text-danger"
+                >
+                  *
+                </span>
+              </label>
+              <div
+                class="js-focus-state input-group u-form"
+              >
+                <input
+                  aria-label="+1 (062) 109-9222"
+                  class="form-control u-form__input"
+                  data-error-class="u-has-error"
+                  data-msg="Please enter your last name."
+                  data-success-class="u-has-success"
+                  placeholder="+1 (062) 109-9222"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-100"
+          />
+          <div
+            class="col-md-6"
+          >
+            <div
+              class="js-form-message mb-6"
+            >
+              <label
+                class="h6 small d-block text-uppercase"
+              >
+                Tỉnh/Thành Phố
+                <span
+                  class="text-danger"
+                >
+                  *
+                </span>
+              </label>
+              <div
+                class="js-focus-state input-group u-form"
+              >
+                <select
+                  class="custom-select"
+                >
+                  <option
+                    value=""
+                  >
+                    --Chọn Tỉnh/Thành Phố--
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6"
+          >
+            <div
+              class="mb-6"
+            >
+              <label
+                class="h6 small d-block text-uppercase"
+              >
+                Quận/Huyện
+                <span
+                  class="text-danger"
+                >
+                  *
+                </span>
+              </label>
+              <select
+                class="custom-select"
+              >
+                <option
+                  value=""
+                >
+                  --Chọn Quận/Huyện--
+                </option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="w-100"
+          />
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="js-form-message mb-6"
+            >
+              <label
+                class="h6 small d-block text-uppercase"
+              >
+                Địa chỉ
+                <span
+                  class="text-danger"
+                >
+                  *
+                </span>
+              </label>
+              <div
+                class="js-focus-state input-group u-form"
+              >
+                <input
+                  aria-label="470 Lucy Forks"
+                  class="form-control u-form__input"
+                  data-error-class="u-has-error"
+                  data-msg="Please enter a valid address."
+                  data-success-class="u-has-success"
+                  placeholder="470 Lucy Forks"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <h2
+            class="h5"
+          >
+            Hình thức thanh toán
+          </h2>
+        </div>
+        <div
+          class="btn-group btn-group-toggle mb-6"
+        >
+          <a
+            class="js-animation-link btn btn-sm btn-outline-secondary u-btn-wide--sm active"
+            href="#"
+          >
+            Thanh Toán Lúc Nhận Hàng
+          </a>
+          <a
+            class="js-animation-link btn btn-sm btn-outline-secondary u-btn-wide--sm "
+            href="#"
+          >
+            Chuyển Khoản
+          </a>
+        </div>
+        <div
+          class=""
+          data-target-group="paymentMethods"
+          id="COD"
+          style="display: block;"
+        />
+        <div
+          class="animated slideInUp"
+          data-target-group="paymentMethods"
+          id="BANK_TRANSFER"
+          style="display: none;"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-8"
+            >
+              <div
+                class="js-form-message mb-6"
+              >
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Thông tin chuyển khoản:
+                </label>
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <p
+                    class="h6 text-secondary"
+                  >
+                    <strong>
+                      Ngân hàng Quốc Tế VIB
+                    </strong>
+                  </p>
+                  <div
+                    class="w-100"
+                  />
+                  <p
+                    class="h6 text-secondary"
+                  >
+                    Chủ tài khoản: LÊ NGỌC KHOA
+                  </p>
+                  <div
+                    class="w-100"
+                  />
+                  <p
+                    class="h6 text-secondary"
+                  >
+                    Số tài khoản: 6000123456
+                  </p>
+                  <div
+                    class="w-100"
+                  />
+                  <p
+                    class="h6 text-secondary"
+                  >
+                    Chi nhánh: Quận 5
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center"
+        >
+          <a
+            style="cursor: pointer;"
+          >
+            <span
+              class="fa fa-angle-left mr-2"
+            />
+             Quay Lại
+          </a>
+          <button
+            class="btn btn-primary u-btn-primary transition-3d-hover"
+            type="submit"
+          >
+            Đặt Hàng
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

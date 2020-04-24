@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Listing Item See current price is Line-through when product have discount 1`] = `
+.c0 {
+  color: red;
+}
+
+.c1 {
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+<div
+  class="c0 col-sm-6 col-lg-4 mb-9"
+>
+  <a
+    class="d-block text-dark text-center transition-3d-hover"
+    href="/products/1"
+  >
+    <img
+      alt="Khoa Product"
+      class="img-fluid rounded"
+      src="/media/product_images/12312321"
+    />
+    <span
+      class="pt-4 px-4"
+    >
+      <h2
+        class="h5 mb-1"
+      >
+        Khoa Product
+      </h2>
+      <div
+        class="c1"
+      >
+        4321
+      </div>
+      <span
+        class="d-block"
+      >
+        1234
+      </span>
+    </span>
+  </a>
+</div>
+`;

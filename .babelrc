@@ -1,0 +1,18 @@
+
+{
+  "presets": ["next/babel"],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components"
+        ]
+      ]
+    },
+    "test":{
+      "plugins": [
+      ]
+    }
+  }
+   
+}

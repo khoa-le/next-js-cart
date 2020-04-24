@@ -1,0 +1,51 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateField",
+      "model": "attribute_value",
+      "field": "attribute",
+      "type": "attribute",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "attribute_value",
+          "field": "attribute"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "attribute_value",
+          "field": "attribute"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[attribute_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "attribute_value",
+          "field": "attribute"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[attribute_id]"
+    }
+  ]
+}
