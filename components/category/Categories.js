@@ -8,7 +8,7 @@ const Categories = ({ categories }) => {
           const category = categories[key];
           return (
             <li key={category.category_id}>
-              <Link href={`/categories/${category.category_id}`}>
+              <Link href="/categories/[id]" as={`/categories/${category.category_id}`}>
                 <a>{category.name}</a>
               </Link>
             </li>

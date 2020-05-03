@@ -11,7 +11,7 @@ const PriceBox = styled.div`
 const ProductListingItem = ({ product }) => {
   return (
     <ProductListingItemWrap className="col-sm-6 col-lg-4 mb-9">
-      <Link href={`/products/${product.product_id}`}>
+      <Link href="/products/[id]" as={`/products/${product.product_id}`}>
         <a className="d-block text-dark text-center transition-3d-hover">
           <img
             className="img-fluid rounded"
