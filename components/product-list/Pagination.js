@@ -1,7 +1,19 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter, withRouter } from "next/router";
 import styled from "styled-components";
 import { GlobalConfiguration } from "../../utils/global";
+
+export const withPageRouter = (Component) => {
+
+  return withRouter(({ router, ...props }) => {
+  
+    router.query = [
+      ...new URLSearchParams((router.asPath || "").split(/\?/)[1]).entries(),
+    ].reduce((q, [k, v]) => Object.assign(q, { [k]: v }), {});
+
+    return <Component {...props} router={router} />;
+  });
+};
 
 const Pagination = ({ numberProducts }) => {
   const router = useRouter();
@@ -10,6 +22,7 @@ const Pagination = ({ numberProducts }) => {
   } = router;
 
   page = page == undefined ? 1 : parseInt(page);
+  console.log(router);
 
   let baseUrl = router.asPath.replace(`page=${page}`, "");
   baseUrl += baseUrl.indexOf("?") > 0 ? "" : "?";
@@ -21,7 +34,7 @@ const Pagination = ({ numberProducts }) => {
         <ul className="pagination mb-0">
           {page > 1 ? (
             <li className="page-item ml-0">
-              <Link href={prevUrl}>
+              <Link href={router.route} as={prevUrl}>
                 <a className="page-link previous" aria-label="Previous">
                   <span aria-hidden="true">« Previous</span>
                 </a>
@@ -29,9 +42,9 @@ const Pagination = ({ numberProducts }) => {
             </li>
           ) : null}
 
-          {numberProducts == GlobalConfiguration.ProductListing.PerPage+1 ? (
+          {numberProducts == GlobalConfiguration.ProductListing.PerPage + 1 ? (
             <li className="page-item">
-              <Link href={nextUrl}>
+              <Link href={router.route} as={nextUrl}>
                 <a className="page-link next" aria-label="Next">
                   <span aria-hidden="true">Next »</span>
                 </a>
@@ -47,4 +60,4 @@ const Pagination = ({ numberProducts }) => {
 const StyledPagination = styled.div`
   text-align: center;
 `;
-export default Pagination;
+export default withPageRouter(Pagination);
