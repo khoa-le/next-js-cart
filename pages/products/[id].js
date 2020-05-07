@@ -49,4 +49,20 @@ export const getServerSideProps = async (context) => {
   return { props: { ...product } };
 };
 
+// export async function getStaticPaths() {
+//   // Call an external API endpoint to get posts
+//   const prisma = new PrismaClient();
+//   const products = await prisma.product.findMany({});
+
+//   // Get the paths we want to pre-render based on posts
+//   const paths = products.map((p) => `/products/${p.product_id}`);
+
+//   // We'll pre-render only these paths at build time.
+//   // { fallback: false } means other routes should 404.
+//   return { paths, fallback: false };
+// }
+
 export default ProductPage;
+
+
+

@@ -124,242 +124,244 @@ exports[`CheckOut Can render CheckOut Form 1`] = `
       <form
         class="js-validate"
       >
-        <div
-          class="mb-4"
-        >
-          <h2
-            class="h5"
-          >
-            Địa chỉ nhận hàng
-          </h2>
-        </div>
-        <div
-          class="row mb-9"
-        >
+        <div>
           <div
-            class="col-md-6"
+            class="mb-4"
           >
-            <div
-              class="js-form-message mb-6"
+            <h2
+              class="h5"
             >
-              <label
-                class="h6 small d-block text-uppercase"
-              >
-                Tên
-                <span
-                  class="text-danger"
-                >
-                  *
-                </span>
-              </label>
-              <div
-                class="js-focus-state input-group u-form"
-              >
-                <input
-                  aria-label="Jack"
-                  class="form-control u-form__input"
-                  data-error-class="u-has-error"
-                  data-msg="Please enter your frist name."
-                  data-success-class="u-has-success"
-                  placeholder="Jack"
-                  type="text"
-                  value=""
-                />
-              </div>
-            </div>
+              Địa chỉ nhận hàng
+            </h2>
           </div>
           <div
-            class="col-md-6"
+            class="row mb-9"
           >
             <div
-              class="js-form-message mb-6"
+              class="col-md-6"
             >
-              <label
-                class="h6 small d-block text-uppercase"
-              >
-                Họ
-                <span
-                  class="text-danger"
-                >
-                  *
-                </span>
-              </label>
               <div
-                class="js-focus-state input-group u-form"
+                class="js-form-message mb-6"
               >
-                <input
-                  aria-label="Wayley"
-                  class="form-control u-form__input"
-                  data-error-class="u-has-error"
-                  data-msg="Please enter your last name."
-                  data-success-class="u-has-success"
-                  placeholder="Wayley"
-                  type="text"
-                  value=""
-                />
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Tên
+                  <span
+                    class="text-danger"
+                  >
+                    *
+                  </span>
+                </label>
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <input
+                    aria-label="Jack"
+                    class="form-control u-form__input"
+                    data-error-class="u-has-error"
+                    data-msg="Please enter your frist name."
+                    data-success-class="u-has-success"
+                    placeholder="Jack"
+                    type="text"
+                    value="Khoa"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="w-100"
-          />
-          <div
-            class="col-md-6"
-          >
             <div
-              class="js-form-message mb-6"
+              class="col-md-6"
             >
-              <label
-                class="h6 small d-block text-uppercase"
-              >
-                Email address
-                <span
-                  class="text-danger"
-                >
-                  *
-                </span>
-              </label>
               <div
-                class="js-focus-state input-group u-form"
+                class="js-form-message mb-6"
               >
-                <input
-                  aria-label="jackwayley@gmail.com"
-                  class="form-control u-form__input"
-                  data-error-class="u-has-error"
-                  data-msg="Please enter a valid email address."
-                  data-success-class="u-has-success"
-                  placeholder="jackwayley@gmail.com"
-                  type="email"
-                  value=""
-                />
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Họ
+                  <span
+                    class="text-danger"
+                  >
+                    *
+                  </span>
+                </label>
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <input
+                    aria-label="Wayley"
+                    class="form-control u-form__input"
+                    data-error-class="u-has-error"
+                    data-msg="Please enter your last name."
+                    data-success-class="u-has-success"
+                    placeholder="Wayley"
+                    type="text"
+                    value="Le "
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-md-6"
-          >
             <div
-              class="js-form-message mb-6"
+              class="w-100"
+            />
+            <div
+              class="col-md-6"
             >
-              <label
-                class="h6 small d-block text-uppercase"
-              >
-                Số điện thoại
-                <span
-                  class="text-danger"
-                >
-                  *
-                </span>
-              </label>
               <div
-                class="js-focus-state input-group u-form"
+                class="js-form-message mb-6"
               >
-                <input
-                  aria-label="+1 (062) 109-9222"
-                  class="form-control u-form__input"
-                  data-error-class="u-has-error"
-                  data-msg="Please enter your last name."
-                  data-success-class="u-has-success"
-                  placeholder="+1 (062) 109-9222"
-                  type="text"
-                  value=""
-                />
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Email address
+                  <span
+                    class="text-danger"
+                  >
+                    *
+                  </span>
+                </label>
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <input
+                    aria-label="jackwayley@gmail.com"
+                    class="form-control u-form__input"
+                    data-error-class="u-has-error"
+                    data-msg="Please enter a valid email address."
+                    data-success-class="u-has-success"
+                    placeholder="jackwayley@gmail.com"
+                    type="email"
+                    value="khoaln6@gmail.com"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="w-100"
-          />
-          <div
-            class="col-md-6"
-          >
             <div
-              class="js-form-message mb-6"
+              class="col-md-6"
             >
-              <label
-                class="h6 small d-block text-uppercase"
-              >
-                Tỉnh/Thành Phố
-                <span
-                  class="text-danger"
-                >
-                  *
-                </span>
-              </label>
               <div
-                class="js-focus-state input-group u-form"
+                class="js-form-message mb-6"
               >
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Số điện thoại
+                  <span
+                    class="text-danger"
+                  >
+                    *
+                  </span>
+                </label>
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <input
+                    aria-label="+1 (062) 109-9222"
+                    class="form-control u-form__input"
+                    data-error-class="u-has-error"
+                    data-msg="Please enter your last name."
+                    data-success-class="u-has-success"
+                    placeholder="+1 (062) 109-9222"
+                    type="text"
+                    value="0978181187"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-100"
+            />
+            <div
+              class="col-md-6"
+            >
+              <div
+                class="js-form-message mb-6"
+              >
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Tỉnh/Thành Phố
+                  <span
+                    class="text-danger"
+                  >
+                    *
+                  </span>
+                </label>
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <select
+                    class="custom-select"
+                  >
+                    <option
+                      value=""
+                    >
+                      --Chọn Tỉnh/Thành Phố--
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6"
+            >
+              <div
+                class="mb-6"
+              >
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Quận/Huyện
+                  <span
+                    class="text-danger"
+                  >
+                    *
+                  </span>
+                </label>
                 <select
                   class="custom-select"
                 >
                   <option
                     value=""
                   >
-                    --Chọn Tỉnh/Thành Phố--
+                    --Chọn Quận/Huyện--
                   </option>
                 </select>
               </div>
             </div>
-          </div>
-          <div
-            class="col-md-6"
-          >
             <div
-              class="mb-6"
-            >
-              <label
-                class="h6 small d-block text-uppercase"
-              >
-                Quận/Huyện
-                <span
-                  class="text-danger"
-                >
-                  *
-                </span>
-              </label>
-              <select
-                class="custom-select"
-              >
-                <option
-                  value=""
-                >
-                  --Chọn Quận/Huyện--
-                </option>
-              </select>
-            </div>
-          </div>
-          <div
-            class="w-100"
-          />
-          <div
-            class="col-md-12"
-          >
+              class="w-100"
+            />
             <div
-              class="js-form-message mb-6"
+              class="col-md-12"
             >
-              <label
-                class="h6 small d-block text-uppercase"
-              >
-                Địa chỉ
-                <span
-                  class="text-danger"
-                >
-                  *
-                </span>
-              </label>
               <div
-                class="js-focus-state input-group u-form"
+                class="js-form-message mb-6"
               >
-                <input
-                  aria-label="470 Lucy Forks"
-                  class="form-control u-form__input"
-                  data-error-class="u-has-error"
-                  data-msg="Please enter a valid address."
-                  data-success-class="u-has-success"
-                  placeholder="470 Lucy Forks"
-                  type="text"
-                  value=""
-                />
+                <label
+                  class="h6 small d-block text-uppercase"
+                >
+                  Địa chỉ
+                  <span
+                    class="text-danger"
+                  >
+                    *
+                  </span>
+                </label>
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <input
+                    aria-label="470 Lucy Forks"
+                    class="form-control u-form__input"
+                    data-error-class="u-has-error"
+                    data-msg="Please enter a valid address."
+                    data-success-class="u-has-success"
+                    placeholder="470 Lucy Forks"
+                    type="text"
+                    value="86 Nguyen Huu Cau"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -449,6 +451,39 @@ exports[`CheckOut Can render CheckOut Form 1`] = `
                   >
                     Chi nhánh: Quận 5
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <h2
+            class="h5"
+          >
+            Ghi chú đơn hàng
+          </h2>
+        </div>
+        <div>
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-8"
+            >
+              <div
+                class="js-form-message mb-6"
+              >
+                <div
+                  class="js-focus-state input-group u-form"
+                >
+                  <textarea
+                    class="form-control u-form__input"
+                    name="text"
+                    placeholder="Note cho đơn hàng ..."
+                    rows="4"
+                  />
                 </div>
               </div>
             </div>

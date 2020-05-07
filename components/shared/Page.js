@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
-import { withRouter } from "next/router";
+import Router, { withRouter } from "next/router";
 import fetch from "isomorphic-unfetch";
 import Head from "./Head";
 import Header from "./Header";
@@ -12,45 +12,50 @@ import { GlobalStyle, ThemeConfig } from "../styles/globalStyle";
 class Page extends React.Component {
   constructor(props) {
     super(props);
-    this.updateCart = cart => {
-      this.setState(state => ({
+    this.updateCart = (cart) => {
+      this.setState((state) => ({
         cart: {
           userCart: cart,
-          cartOpen: true
-        }
+          cartOpen: true,
+        },
       }));
     };
-    this.toggleCart = () => {
-      this.setState(state => ({
+    this.toggleCart = (isCartOpen) => {
+      this.setState((state) => ({
         cart: {
           userCart: state.cart.userCart,
-          cartOpen: !state.cart.cartOpen
-        }
+          cartOpen: isCartOpen,
+        },
       }));
     };
     this.state = {
       cart: {
         userCart: {},
-        cartOpen: false
+        cartOpen: false,
       },
       updateCart: this.updateCart,
-      toggleCart: this.toggleCart
+      toggleCart: this.toggleCart,
     };
   }
   componentDidMount() {
     const response = fetch("/api/checkout/cart")
-      .then(r => r.json())
-      .then(cart => {
-        this.setState(state => ({
+      .then((r) => r.json())
+      .then((cart) => {
+        this.setState((state) => ({
           cart: {
-            userCart: cart
-          }
+            userCart: cart,
+          },
         }));
       });
+
+    Router.events.on("routeChangeComplete", (url) => {
+      this.toggleCart(false);
+    });
   }
 
   render() {
     const { router } = this.props;
+
     return (
       <ThemeProvider theme={ThemeConfig}>
         <GlobalStyle />
@@ -73,10 +78,10 @@ class Page extends React.Component {
 }
 
 const StyledPage = styled.div`
-  max-width: ${props => props.theme.maxWidth};
+  max-width: ${(props) => props.theme.maxWidth};
   background: white;
   position: relative;
-  color: ${props => props.theme.black};
+  color: ${(props) => props.theme.black};
   margin: 0 auto;
 `;
 

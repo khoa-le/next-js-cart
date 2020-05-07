@@ -1,33 +1,31 @@
 import { useState, useEffect, useCallback } from "react";
-import fetch from "isomorphic-unfetch";
 import useDataApi from "../../lib/hooks/useDataApi";
-import useSetState from "../../lib/hooks/useSetState";
-import { createGlobalStyle } from "styled-components";
 
 const BillingAddress = ({ formData, handleInputChange }) => {
   const [regions, setRegions] = useState([]);
   const [cities, setCities] = useState([]);
 
   useEffect(() => {
-    const data = useDataApi("/api/directory/region", {}).then(data =>
+    useDataApi("/api/directory/region", {}).then((data) => {
       setRegions(data)
-    );
+      
+    });
   }, []);
 
-  const fetchCityByRegion = useCallback(region_id => {
-    useDataApi("/api/directory/city?region_id=" + region_id, {}).then(data =>
+  const fetchCityByRegion = useCallback((region_id) => {
+    useDataApi("/api/directory/city?region_id=" + region_id, {}).then((data) =>
       setCities(data)
     );
   }, []);
 
-  const handleRegionChange = event => {
+  const handleRegionChange = (event) => {
     const region_id = event.target.value;
     fetchCityByRegion(region_id);
     handleInputChange("regionId", region_id);
   };
 
   return (
-    <>
+    <div>
       <div className="mb-4">
         <h2 className="h5">Địa chỉ nhận hàng</h2>
       </div>
@@ -44,7 +42,7 @@ const BillingAddress = ({ formData, handleInputChange }) => {
               <input
                 className="form-control u-form__input"
                 type="text"
-                onChange={event =>
+                onChange={(event) =>
                   handleInputChange("firstName", event.target.value)
                 }
                 value={formData.firstName}
@@ -70,7 +68,7 @@ const BillingAddress = ({ formData, handleInputChange }) => {
               <input
                 className="form-control u-form__input"
                 type="text"
-                onChange={event =>
+                onChange={(event) =>
                   handleInputChange("lastName", event.target.value)
                 }
                 value={formData.lastName}
@@ -98,7 +96,7 @@ const BillingAddress = ({ formData, handleInputChange }) => {
               <input
                 className="form-control u-form__input"
                 type="email"
-                onChange={event =>
+                onChange={(event) =>
                   handleInputChange("email", event.target.value)
                 }
                 value={formData.email}
@@ -124,7 +122,7 @@ const BillingAddress = ({ formData, handleInputChange }) => {
               <input
                 className="form-control u-form__input"
                 type="text"
-                onChange={event =>
+                onChange={(event) =>
                   handleInputChange("phone", event.target.value)
                 }
                 value={formData.phone}
@@ -150,8 +148,8 @@ const BillingAddress = ({ formData, handleInputChange }) => {
             <div className="js-focus-state input-group u-form">
               <select onChange={handleRegionChange} className="custom-select">
                 <option value="">--Chọn Tỉnh/Thành Phố--</option>
-                {regions &&
-                  regions.map(region => (
+                {regions  &&
+                  regions.map((region) => (
                     <option key={region.region_id} value={region.region_id}>
                       {region.default_name}
                     </option>
@@ -170,11 +168,13 @@ const BillingAddress = ({ formData, handleInputChange }) => {
 
             <select
               className="custom-select"
-              onChange={event => handleInputChange("cityId", event.target.value)}
+              onChange={(event) =>
+                handleInputChange("cityId", event.target.value)
+              }
             >
               <option value="">--Chọn Quận/Huyện--</option>
               {cities &&
-                cities.map(city => (
+                cities.map((city) => (
                   <option key={city.city_id} value={city.city_id}>
                     {city.default_name}
                   </option>
@@ -196,7 +196,7 @@ const BillingAddress = ({ formData, handleInputChange }) => {
               <input
                 className="form-control u-form__input"
                 type="text"
-                onChange={event =>
+                onChange={(event) =>
                   handleInputChange("address", event.target.value)
                 }
                 value={formData.address}
@@ -211,7 +211,7 @@ const BillingAddress = ({ formData, handleInputChange }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default BillingAddress;
