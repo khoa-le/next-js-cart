@@ -1,7 +1,6 @@
 
 {
   "presets": ["next/babel"],
-  "plugins": [["styled-components", { "ssr": true }]],
   "env": {
     "development": {
       "plugins": [
@@ -9,6 +8,9 @@
           "babel-plugin-styled-components"
         ]
       ]
+    },
+    "production":{
+      "plugins":[["styled-components", { "ssr": true }]]
     },
     "test":{
       "plugins": [
