@@ -74,10 +74,8 @@
 
 
 /* end nprogress */
-
-
 .u-badge {
-  z-index: 3;
+  z-index: 0;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -616,4 +614,17 @@
   .u-space-5-top--xl {
     padding-top: 15rem;
   }
+}
+
+/* Topbar Nav Link */
+.u-header__topbar-nav-link {
+  color: #77838f;
+  font-weight: 300;
+  font-size: 0.875rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.u-header__topbar-nav-link:hover {
+  color: #1e2022;
 }

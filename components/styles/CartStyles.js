@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from "styled-components";
+import { mobile } from "../styles/globalStyle";
 
 const CartStyles = styled.div`
   padding: 20px;
@@ -17,13 +18,16 @@ const CartStyles = styled.div`
   z-index: 5;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  ${props => props.open && `transform: translateX(0);`};
+  ${(props) => props.open && `transform: translateX(0);`};
+  ${mobile(css`
+    width: 100%;
+  `)}
   header {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
   }
   footer {
-    border-top: 10px double ${props => props.theme.black};
+    border-top: 10px double ${(props) => props.theme.black};
     margin-top: 2rem;
     padding-top: 2rem;
     grid-template-columns: auto auto;

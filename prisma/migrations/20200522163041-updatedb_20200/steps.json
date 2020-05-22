@@ -1,0 +1,1821 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateModel",
+      "model": "cart"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "cart_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart",
+          "field": "cart_id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "cart",
+          "field": "cart_id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart",
+          "field": "cart_id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "created_at",
+      "type": "DateTime",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "customer_email",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "customer_id",
+      "type": "Int",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "grand_total",
+      "type": "Float",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "mask_id",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart",
+          "field": "mask_id"
+        },
+        "directive": "unique"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "total_qty",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart",
+          "field": "total_qty"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "cart",
+          "field": "total_qty"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "0"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "updated_at",
+      "type": "DateTime",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart",
+      "field": "cart_item",
+      "type": "cart_item",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateModel",
+      "model": "cart_item"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "cart_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "created_at",
+      "type": "DateTime",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "item_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "item_id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "item_id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "item_id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "options",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "price",
+      "type": "Float",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "product_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "product_name",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "qty",
+      "type": "Int",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "updated_at",
+      "type": "DateTime",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "cart",
+      "type": "cart",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "cart"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "cart"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[cart_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "cart"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[cart_id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "cart_item",
+      "field": "product",
+      "type": "product",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "product"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "cart_item",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "cart_item",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[cart_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"index2\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "cart_item",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[product_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"index3\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "cart_item",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[product_id, cart_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"UniqueProductOnCart\""
+            }
+          ]
+        },
+        "directive": "unique"
+      }
+    },
+    {
+      "tag": "CreateModel",
+      "model": "directory_city"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_city",
+      "field": "city_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "directory_city",
+          "field": "city_id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "directory_city",
+          "field": "city_id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "directory_city",
+          "field": "city_id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_city",
+      "field": "code",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_city",
+      "field": "default_name",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_city",
+      "field": "region_id",
+      "type": "Int",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_city",
+      "field": "order_address",
+      "type": "order_address",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "directory_city",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[region_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"region_idx\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateModel",
+      "model": "directory_region"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_region",
+      "field": "code",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_region",
+      "field": "country_id",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_region",
+      "field": "default_name",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_region",
+      "field": "region_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "directory_region",
+          "field": "region_id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "directory_region",
+          "field": "region_id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "directory_region",
+          "field": "region_id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "directory_region",
+      "field": "order_address",
+      "type": "order_address",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "directory_region",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[country_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"idx_country\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateModel",
+      "model": "order"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "auth_code",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "comments",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "created_on",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "customer_id",
+      "type": "Int",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "order_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order",
+          "field": "order_id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order",
+          "field": "order_id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order",
+          "field": "order_id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "payment_method",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "reference",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "shipped_on",
+      "type": "DateTime",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "shipping_id",
+      "type": "Int",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "status",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order",
+          "field": "status"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order",
+          "field": "status"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "0"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "tax_id",
+      "type": "Int",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "total_amount",
+      "type": "Float",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order",
+          "field": "total_amount"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order",
+          "field": "total_amount"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "0"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "order_address",
+      "type": "order_address",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order",
+      "field": "order_detail",
+      "type": "order_detail",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "order",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[customer_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"idx_orders_customer_id\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "order",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[shipping_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"idx_orders_shipping_id\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "order",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[tax_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"idx_orders_tax_id\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateModel",
+      "model": "order_address"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "address",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "city_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "email",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "email"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "email"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "\"\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "entity_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "entity_id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "entity_id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "entity_id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "first_name",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "first_name"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "first_name"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "\"\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "last_name",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "last_name"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "last_name"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "\"\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "order_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "phone",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "phone"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "phone"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "\"\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "region_id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "directory_city",
+      "type": "directory_city",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "directory_city"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "directory_city"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[city_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "directory_city"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[city_id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "order",
+      "type": "order",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "order"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "order"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[order_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "order"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[order_id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_address",
+      "field": "directory_region",
+      "type": "directory_region",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "directory_region"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "directory_region"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[region_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_address",
+          "field": "directory_region"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[region_id]"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "order_address",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[city_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"fk_city_order_address\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "order_address",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[order_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"fk_order_address\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "order_address",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[region_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"fk_region_order_address\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "DeleteModel",
+      "model": "orders"
+    },
+    {
+      "tag": "CreateField",
+      "model": "attribute",
+      "field": "attribute_value",
+      "type": "attribute_value",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "attribute_value",
+      "field": "ProductsOnAttributes",
+      "type": "ProductsOnAttributes",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "attribute_value",
+      "field": "product",
+      "type": "product",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "attribute_value",
+          "field": "product"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "attribute_value",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "attribute_value",
+      "field": "products"
+    },
+    {
+      "tag": "CreateField",
+      "model": "category",
+      "field": "categoriesOnproducts",
+      "type": "categoriesOnproducts",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "category",
+      "field": "product",
+      "type": "product",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "category",
+          "field": "product"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "category",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "category",
+      "field": "products"
+    },
+    {
+      "tag": "CreateField",
+      "model": "customer",
+      "field": "reset_password_token",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "customer",
+      "field": "salt",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "customer",
+      "field": "name",
+      "arity": "Optional"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "customer",
+      "field": "shipping_region_id",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_detail",
+      "field": "order",
+      "type": "order",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_detail",
+          "field": "order"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_detail",
+          "field": "order"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[order_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_detail",
+          "field": "order"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[order_id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "order_detail",
+      "field": "product",
+      "type": "product",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "order_detail",
+          "field": "product"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_detail",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "order_detail",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "order_detail",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[product_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"product_idx\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "product",
+      "field": "cart_item",
+      "type": "cart_item",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "product",
+      "field": "categoriesOnproducts",
+      "type": "categoriesOnproducts",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "product",
+      "field": "order_detail",
+      "type": "order_detail",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "product",
+      "field": "ProductsOnAttributes",
+      "type": "ProductsOnAttributes",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "product",
+      "field": "attribute_value",
+      "type": "attribute_value",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "product",
+          "field": "attribute_value"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "product",
+          "field": "attribute_value"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[attribute_value_id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "product",
+      "field": "category",
+      "type": "category",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "product",
+          "field": "category"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "product",
+          "field": "category"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[category_id]"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "product",
+      "field": "categories"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "product",
+      "field": "attribute_values"
+    },
+    {
+      "tag": "CreateField",
+      "model": "ProductsOnAttributes",
+      "field": "attribute_value",
+      "type": "attribute_value",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "ProductsOnAttributes",
+          "field": "attribute_value"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "ProductsOnAttributes",
+          "field": "attribute_value"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[attribute_value_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "ProductsOnAttributes",
+          "field": "attribute_value"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[attribute_value_id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "ProductsOnAttributes",
+      "field": "product",
+      "type": "product",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "ProductsOnAttributes",
+          "field": "product"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "ProductsOnAttributes",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "ProductsOnAttributes",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "ProductsOnAttributes",
+      "field": "attribute_values"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "ProductsOnAttributes",
+      "field": "products"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "ProductsOnAttributes",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[attribute_value_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"attribute_value_id\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "categoriesOnproducts",
+      "field": "category",
+      "type": "category",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "categoriesOnproducts",
+          "field": "category"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "categoriesOnproducts",
+          "field": "category"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[category_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "categoriesOnproducts",
+          "field": "category"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[category_id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "categoriesOnproducts",
+      "field": "product",
+      "type": "product",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "categoriesOnproducts",
+          "field": "product"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "categoriesOnproducts",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "categoriesOnproducts",
+          "field": "product"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[product_id]"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "categoriesOnproducts",
+      "field": "products"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "categoriesOnproducts",
+      "field": "categories"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "categoriesOnproducts",
+          "arguments": [
+            {
+              "name": "",
+              "value": "[product_id]"
+            },
+            {
+              "name": "name",
+              "value": "\"product_id\""
+            }
+          ]
+        },
+        "directive": "index"
+      }
+    }
+  ]
+}

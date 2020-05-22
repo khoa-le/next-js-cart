@@ -1,4 +1,3 @@
-
 import CheckOut from "../components/checkout/CheckOut";
 import PageBlank from "../components/shared/PageBlank";
 const CheckOutPage = () => {
@@ -6,5 +5,8 @@ const CheckOutPage = () => {
 };
 
 CheckOutPage.layout = PageBlank;
+CheckOutPage.getInitialProps = async ({ req, res }) => {
+  return {};
+};
 
 export default CheckOutPage;
